@@ -43,7 +43,8 @@ final as (
 
         {% endfor -%}
 
-        order_payments.total_amount as amount
+        order_payments.total_amount as amount,
+        'whohoo final' as final_words
 
     from orders
 

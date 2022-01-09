@@ -21,3 +21,4 @@ models:
       materialized: table
       staging:
         materialized: view
+        +schema: jaffle_staging
