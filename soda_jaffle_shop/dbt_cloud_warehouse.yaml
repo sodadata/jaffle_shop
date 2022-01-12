@@ -1,0 +1,14 @@
+name: snowflake
+connection:
+  type: snowflake
+  username: env_var(SNOWFLAKE_USERNAME)
+  password: env_var(SNOWFLAKE_PASSWORD)
+  account: so16160.eu-west-1
+  database: dbt_cloud
+  warehouse: compute_wh
+  schema: dbt_bboutonnet
+soda_account:
+  host: cloud.soda.io
+  api_key_id: env_var(API_PUBLIC_JAFFLE)
+  api_key_secret: env_var(API_PRIVATE_JAFFLE)
+dbt_cloud_api_token: env_var(DBT_CLOUD_API)
