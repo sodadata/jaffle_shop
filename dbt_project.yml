@@ -19,6 +19,7 @@ clean-targets:
 models:
   jaffle_shop:
       materialized: table
+      +schema: jaffle_shop
       staging:
         materialized: view
-        +schema: jaffle_staging
+        +schema: jaffle_shop_staging
