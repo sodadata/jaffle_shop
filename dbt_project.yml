@@ -23,3 +23,5 @@ models:
       staging:
         materialized: view
         +schema: jaffle_shop_staging
+tests:
+  +store_failures: true
