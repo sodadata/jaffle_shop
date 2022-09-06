@@ -1,0 +1,13 @@
+data_source jaffle_shop:
+  type: postgres
+  connection:
+  host: localhost
+  port: 5432
+  username: dbt
+  password: dbt
+  database: postgres
+  schema: jaffle_shop
+soda_cloud:
+  host: cloud.soda.io
+  api_key_id: <your API key ID>
+  api_key_secret: <your API secret>

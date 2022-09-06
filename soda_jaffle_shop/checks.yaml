@@ -1,0 +1,5 @@
+checks for orders:
+  - schema:
+      warn:
+        when forbidden column present: ['forbidden_column']
+  - avg(amount) between 16 and 17
